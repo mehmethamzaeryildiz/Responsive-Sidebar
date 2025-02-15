@@ -1,0 +1,17 @@
+<div class="sidenav">
+    <div class="logo-container">
+        <button class="logo"></button>
+        <div class="logo-text"></div>
+        <button class="btn-close"></button>
+    </div>
+    <ul class="sidenav-nav"> 
+        @for (data of navData; track data) {
+            <li class="sidenav-nav-item">
+                <a class="sidenav-nav-link" [routerLink]="[data.routeLink]">
+                    <i class="sidenav-link-icon" [class]="data.icon"></i>
+                    <span class="sidenav-link-text">{{data.label}}</span>
+                </a>
+            </li>
+        }        
+    </ul>
+</div>
