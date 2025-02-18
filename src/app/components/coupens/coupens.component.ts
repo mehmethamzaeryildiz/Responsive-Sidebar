@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-coupens',
-  standalone: true,
-  imports: [],
+  standalone: false,
   templateUrl: './coupens.component.html',
   styleUrl: './coupens.component.scss'
 })
